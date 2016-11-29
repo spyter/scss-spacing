@@ -1,0 +1,34 @@
+{
+  "name": "scss-spacing",
+  "version": "1.0.0",
+  "description": "Basic css utility spacers written in scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spyter/scss-spacing.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "spacing",
+    "utilities"
+  ],
+  "author": "spyter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spyter/scss-spacing/issues"
+  },
+  "homepage": "https://github.com/spyter/scss-spacing#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "run-sequence": "^1.2.2"
+  }
+}
