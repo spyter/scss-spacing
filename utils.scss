@@ -1,0 +1,30 @@
+$maxRange: 5;
+$sides: left, top, right, bottom;
+$types: padding, margin;
+$unit: "rem";
+
+@mixin spacing {
+    @for $i from 0 through $maxRange {
+        @each $type in $types {
+            .#{str-slice($type, 0, 1)}-#{$i} { 
+                #{$type}: $i#{$unit};
+            }
+            
+            .#{str-slice($type, 0, 1)}-#{$i}-5 { 
+                #{$type}: #{$i + .5}#{$unit};
+            }
+            
+            @each $side in $sides {
+                .#{str-slice($type, 0, 1)}-#{str-slice($side, 0, 1)}-#{$i} {
+                    #{$type}-#{$side}: $i#{$unit};
+                }
+                
+                .#{str-slice($type, 0, 1)}-#{str-slice($side, 0, 1)}-#{$i}-5 {
+                    #{$type}-#{$side}: #{$i + .5}#{$unit};
+                }
+            }
+        }
+    }
+}
+
+@include spacing;
