@@ -8,6 +8,10 @@ p-0 (padding: 0)
 m-t-0 (margin-top: 0)
 etc...
 
+change the $unit variable from "rem" to "px" or "em" to change the spacer metric.
+
+change the $maxRange variable from 5 to whatever to generate additional classes.
+
 
 CSS output: 
 
